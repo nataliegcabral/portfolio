@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background: linear-gradient(236.85deg, #18070a 27.26%, #291115 96.03%);
+}
+
+.container {
+  color: #1c1c1c;
+  margin: 64px;
+  background: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 6px 6px 6px #060809;
+  padding: 64px;
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+}
+
+.perfil {
+  display: flex;
+}
+
+.perfil-foto {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  max-height: 160px;
+  border-radius: 460px;
+}
+
+.titulo {
+  margin-left: 16px;
+}
+
+.titulo h1 {
+  font-weight: 700;
+  font-size: 36px;
+}
+
+.titulo h2 {
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.tema img {
+  width: 20px;
+  height: 20px;
+}
+
+.tema button {
+  align-self: flex-end;
+  font-size: 15px;
+  font-weight: 400;
+  padding: 8px 16px;
+  border-radius: 20px;
+  background: #ecf4ff;
+  border: 2px solid #0e1d2f;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.links-item {
+  text-decoration: none;
+  color: #1c1c1c;
+  font-size: 25px;
+  padding: 5px;
+}
+
+.a {
+  transition: transform 0.3s;
+}
+
+.a[title="GitHub"]:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale (1.1);
+}
+
+.a[title="CodePen"]:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale (1.1);
+}
+
+.a[title="LinkedIn"]:hover {
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale (1.1);
+}
+
+.projetos {
+  display: flex;
+  color: #e6e6e6;
+  flex-direction: column;
+  background: url("https://cdn.discordapp.com/attachments/728273558731620371/1021798068489822258/IMG_0429.png");
+  margin-top: 32px;
+  padding: 32px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
+}
+
+.projetos-titulo {
+  list-style: none;
+  font-weight: 700;
+  font-size: 32px;
+}
+
+.projetos-item {
+  list-style-type: none;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 50px;
+  margin-right: 70px;
+}
+
+.projetos-item a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.dark {
+  background: linear-gradient(236.85deg, #18070a 27.26%, #291115 96.03%);
+}
+
+.dark .container {
+  background: #010101;
+  color: #e6e6e6;
+}
+
+/*linear-gradient(236.65deg, #17020f 35.49%, #442347 83.19%);
+*/
+.dark .projetos {
+  background: url("https://cdn.discordapp.com/attachments/728273558731620371/1021798068489822258/IMG_0429.png");
+}
+
+.dark .tema button {
+  background: #111111;
+  border: 2px solid #f7f7f7;
+}
+
+.dark .links-item {
+  color: #f7f7f7;
+}
