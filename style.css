@@ -10,7 +10,7 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background: linear-gradient(236.85deg, #18070a 27.26%, #291115 96.03%);
+  background: var(--cor2);
 }
 
 .container {
