@@ -1,152 +1,150 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap");
+@charset "UTF-8";
+
+@font-face {
+  font-family: 'Majanan';
+  src: url('fonts/majanan/Majanan.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Semplicita';
+  src: url('fonts/semplicita/Semplicita/Semplicita\ Light.otf') format('opentype');
+}
 
 :root {
-  --cor0: #10454f;
-  --cor1: #416d75;
-  --cor2: #bcb8b1;
-  --cor3: #f4f3ee;
-  --cor4: #e1b1a3;
+  --color0: #0f0f13;
+  --color1: #141419; /* lighter #E8E8ED*/
+  --color2: #A0EFFF;
+  --color3: #124955;
+  --color4: #CAA0E6;
+  --color5: #341E43; 
+  --color6: #FFA1AE;
+  --color7: #55131C;
+  --color8: #e2e1e4; /*darker #493030*/
+  --color9: #f1eef4;
+
+  --default-font: Semplicita, Helvetica, sans-serif;
+  --main-font: Majanan, Helvetica, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1.08em;
+}
+
+header {
+  background-color: var(--color0);
+  height: 110px;
+}
+
+header > nav {
+  background-image: linear-gradient( to right, #A0EFFF, #CAA0E6, #FFA1AE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 35px 0px 0px 50px;
+  flex-direction: row;
+  float: right;
+}
+
+nav > a {
+  text-decoration: none;
+  color: var(--color1);
+  margin: 40px;
+}
+
+header > img {
+  width: 80px;
+  float: left;
+  padding: 10px 0px 10px 50px;
+}
+
+.menu {
+  display: none;
+}
+
+.menu img {
+  filter: invert(85%) sepia(24%) saturate(4048%) hue-rotate(202deg) brightness(96%) contrast(87%);
+  width: 30px;
+  float: right;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu {
+    display: block;
+  }
+
+  nav > a {
+    display: none;
+  }
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
-  background: var(--cor2);
+  font-family: var(--default-font);
+  background-color: var(--color1);
+  color: var(--color6);
+  font-weight: lighter;
+  min-height: 100vh;
+  text-align: center;
 }
 
-.container {
-  color: #1c1c1c;
-  margin: 64px;
-  background: #f7f7f7;
-  border-radius: 10px;
-  box-shadow: 6px 6px 6px #060809;
-  padding: 64px;
-}
-
-.cabecalho {
+.home {
+  font-size: 3em;
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  padding: 40px;
 }
 
-.perfil {
-  display: flex;
+.home > h1 {
+  background-image: linear-gradient( to right, #A0EFFF, #CAA0E6, #FFA1AE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
 }
 
-.perfil-foto {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  max-height: 160px;
-  border-radius: 460px;
+.home img {
+  width: 400px;
+  height: auto;
 }
 
-.titulo {
-  margin-left: 16px;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*DARK MODE DEPOIS EU ARRUMO*/
+
+.light {
+  background-color: var(--color8);
+  color: var(--color3);
 }
 
-.titulo h1 {
-  font-weight: 700;
-  font-size: 36px;
+.light header {
+  background: var(--color9);
+
 }
 
-.titulo h2 {
-  font-weight: 600;
-  font-size: 24px;
+.light nav {
+  background-image: linear-gradient( to right, var(--color3), var(--color5), var(--color7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.tema img {
-  width: 20px;
-  height: 20px;
+.light .home > h1 {
+  background-image: linear-gradient( to right, var(--color3), var(--color5), var(--color7));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
-.tema button {
-  align-self: flex-end;
-  font-size: 15px;
-  font-weight: 400;
-  padding: 8px 16px;
-  border-radius: 20px;
-  background: #ecf4ff;
-  border: 2px solid #0e1d2f;
-  transition: all 0.3s;
-  cursor: pointer;
-}
-
-.links-item {
-  text-decoration: none;
-  color: #1c1c1c;
-  font-size: 25px;
-  padding: 5px;
-}
-
-.a {
-  transition: transform 0.3s;
-}
-
-.a[title="GitHub"]:hover {
-  -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale (1.1);
-}
-
-.a[title="CodePen"]:hover {
-  -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale (1.1);
-}
-
-.a[title="LinkedIn"]:hover {
-  -ms-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale (1.1);
-}
-
-.projetos {
-  display: flex;
-  color: #e6e6e6;
-  flex-direction: column;
-  background: url("https://cdn.discordapp.com/attachments/728273558731620371/1021798068489822258/IMG_0429.png");
-  margin-top: 32px;
-  padding: 32px;
-  border-radius: 15px;
-  box-shadow: 2px 2px 4px rgba(16, 16, 16, 0.42);
-}
-
-.projetos-titulo {
-  list-style: none;
-  font-weight: 700;
-  font-size: 32px;
-}
-
-.projetos-item {
-  list-style-type: none;
-  font-size: 24px;
-  font-weight: 400;
-  line-height: 50px;
-  margin-right: 70px;
-}
-
-.projetos-item a {
-  color: #f7f7f7;
-  text-decoration: none;
-}
-
-.dark {
-  background: linear-gradient(236.85deg, #18070a 27.26%, #291115 96.03%);
-}
-
-.dark .container {
-  background: #010101;
-  color: #e6e6e6;
-}
-
-/*linear-gradient(236.65deg, #17020f 35.49%, #442347 83.19%);
-*/
-.dark .projetos {
-  background: url("https://cdn.discordapp.com/attachments/728273558731620371/1021798068489822258/IMG_0429.png");
-}
-
-.dark .tema button {
-  background: #111111;
-  border: 2px solid #f7f7f7;
-}
-
-.dark .links-item {
-  color: #f7f7f7;
+.light #theme {
+  content: url(images/lightmode.png);
+  filter: invert(71%) sepia(6%) saturate(2383%) hue-rotate(304deg) brightness(100%) contrast(101%);
 }
