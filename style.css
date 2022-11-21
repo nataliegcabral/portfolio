@@ -87,6 +87,7 @@ body {
   text-align: center;
 }
 
+
 .home {
   font-size: 3em;
   display: flex;
@@ -98,6 +99,8 @@ body {
   background-image: linear-gradient( to right, #A0EFFF, #CAA0E6, #FFA1AE);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: 40vw;
+  height: 50%;
 
 }
 
