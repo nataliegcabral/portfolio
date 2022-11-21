@@ -6,7 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="styles/style2.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/media-queries.css">
 </head>
 <body>
   <!--
@@ -24,9 +25,10 @@
     (CUIDADO COM OS DIREITOS AUTORAIS)
   -->
   <header>
-    <img src="images/logo.png" alt="logo">
-      <i id="burguer" class="material-icons">menu</i>
-      <menu>
+
+      <i id="burguer" class="material-icons" onclick="showMenu()">menu</i>
+
+      <menu id="item">
         <ul>
           <li><a href="#">Home</a></li>
           <li><a href="#">About</a></li>
@@ -34,8 +36,6 @@
           <li><a href="#">Contact</a></li>
         </ul>
       </menu>
-
-        
 
   </header>
 
