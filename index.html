@@ -5,7 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles/style2.css">
 </head>
 <body>
   <!--
@@ -24,15 +25,18 @@
   -->
   <header>
     <img src="images/logo.png" alt="logo">
-      <nav>
-        <a href="#">Home</a>
-        <a href="#">About</a>
-        <a href="#">Projects</a>
-        <a href="#">Contact</a>
-      </nav>
-      <div class="menu">
-        <img src="images/menu.png" alt="menu">
-      </div>
+      <i id="burguer" class="material-icons">menu</i>
+      <menu>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </menu>
+
+        
+
   </header>
 
   <main>
@@ -83,16 +87,21 @@
 
     <section class="contact">
       <h2>Contact Me!</h2>
-      <div>
-        <p>Name</p>
-        <input type="text" id="name" placeholder="Enter your Name">
+      <fieldset>
+        <form action="" method="post" autocomplete="on">
+          <label for="iname">Name</label><br>
+          <input type="text" name="name" id="iname" placeholder="Enter your Name" required><br>
 
-        <p>Email</p>
-        <input type="text" id="email" placeholder="Enter your Email">
+          <label for="iemail">Email</label><br>
+          <input type="email" name="email" id="iemail" placeholder="Enter your Email" required><br>
 
-        <p>Message</p>
-        <input type="text" id="message" placeholder="Enter your Message">
-      </div>
+          <label for="imsg">Message</label><br>
+          <textarea name="msg" id="imsg" cols="40" rows="10"></textarea><br>
+
+          <input type="submit" value="Send">
+
+        </form>
+      </fieldset>
     </section>
   </main>
 
