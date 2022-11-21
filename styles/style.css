@@ -30,6 +30,7 @@
   margin: 0;
   padding: 0;
   font-size: 1em;
+  box-sizing: border-box;
 }
 
 body {
@@ -43,7 +44,7 @@ body {
 
 header {
   background-color: var(--color0);
-
+  
 }
 
 header > img {
@@ -96,7 +97,7 @@ main {
 }
 
 .home {
-  display: inline;
+  display: flex;
   
 }
 
@@ -104,19 +105,20 @@ main {
   background-image: linear-gradient( to right, #A0EFFF, #CAA0E6, #FFA1AE);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  display: block;
   text-align: center;
   padding: 20px;
-  width: 200px;
-  font-size: 1.2em;
+  width: 40%;
+  font-size: 1.4em;
+  flex: 50%;
 }
 
-.home > picture {
+.home > img {
+  width: 50%;
+  height: auto;
+  flex: 50%;
+}
+
+.about {
   display: block;
-  text-align: right;
-}
-
-.home > picture > img {
-  width: 400px;
 }
 
