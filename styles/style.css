@@ -39,19 +39,11 @@ body {
   color: var(--color6);
   font-weight: lighter;
   min-height: 100vh;
-  font-size: 2em;
+  font-size: 1em;
 }
 
 header {
   background-color: var(--color0);
-  
-}
-
-header > img {
-  position: relative;
-  width: 90px;
-  display: block;
-  text-align: left;
   
 }
 
@@ -60,7 +52,7 @@ header > img {
   text-align: right;
   padding: 15px 35px;
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 2.5em;
 }
 
 #burguer:hover {
@@ -71,7 +63,7 @@ header > img {
 menu {
   text-align: right;
   display: none;
-  font-size: 1em;
+  font-size: 1.5em;
 }
 
 menu > ul {
@@ -98,7 +90,7 @@ main {
 
 .home {
   display: flex;
-  
+  flex-direction: column;
 }
 
 .home > h1 {
@@ -106,19 +98,27 @@ main {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
-  padding: 20px;
-  width: 40%;
-  font-size: 1.4em;
-  flex: 50%;
+  padding: 30px;
+  font-size: 2.4em;
 }
 
 .home > img {
-  width: 50%;
-  height: auto;
-  flex: 50%;
+  margin: auto;
+}
+
+.line {
+  border-bottom: 1px solid var(--color3);
+  margin: 20px;
+
 }
 
 .about {
   display: block;
+}
+
+.about > h2 {
+  font-size: 1.8em;
+  border-bottom: 1px solid var(--color6);
+  padding: 10px;
 }
 
