@@ -6,3 +6,10 @@ function showMenu() {
     }
 }
 
+function changedSize() {
+    if (window.innerWidth >= 650) {
+        item.style.display = 'block'
+    } else {
+        item.style.display = 'none'
+    }
+}

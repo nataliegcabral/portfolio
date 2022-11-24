@@ -7,10 +7,11 @@
   <title>Portfolio</title>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/media-queries.css">
 </head>
-<body>
+<body onresize="changedSize()">
   <!--
     paleta de cores temporária
     projetos do codepen temporários
@@ -130,10 +131,10 @@
 
           <p>
             <label for="imsg">Message</label><br>
-            <textarea name="msg" id="imsg" cols="40" rows="10"></textarea><br>
+            <textarea name="msg" id="imsg" cols="40" rows="10" placeholder="Type your message..."></textarea><br>
           </p>
 
-          <p><input type="submit" value="Send"></p>
+          <p><input type="submit" value="Send" id="button"></p>
 
         </form>
       </fieldset>
@@ -141,15 +142,12 @@
   </main>
 
   <footer>
-    <h4>Social</h4>
       <nav>
-        <a href="https://www.linkedin.com/in/natalie-c-118432110/" target="_blank">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-plain.svg" width="10%"/></a>
+        <a href="https://www.linkedin.com/in/natalie-c-118432110/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
 
-          <a href="https://github.com/nataliegcabral"target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" width="10%"/></a>
+          <a href="https://github.com/nataliegcabral"target="_blank"><i class="devicon-github-original"></i></a>
 
-          <a href="https://www.behance.net/tatalows" target="_blank"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/behance/behance-plain.svg" width="10%"/></a>
-
+          <a href="https://www.behance.net/tatalows" target="_blank"><i class="devicon-behance-plain"></i></a>
       </nav>
 
     <p> &copy; Natalie Cabral 2022</p>

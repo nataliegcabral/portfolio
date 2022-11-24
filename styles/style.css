@@ -63,21 +63,24 @@ header {
 menu {
   text-align: right;
   display: none;
-  font-size: 1.5em;
+  font-size: 1.5em;  
+  display: flex;
+  flex-direction: column;
 }
 
 menu > ul {
   list-style-type: none;
   padding: 10px 20px;
-  
+}
+
+menu > ul > li {
+  padding: 15px;
 }
 
 menu > ul > li > a {
-  display: block;
+
   text-decoration: none;
   color: var(--color4);
-  padding: 15px;
-  
 }
 
 menu > ul > li > a:hover {
@@ -205,6 +208,7 @@ main {
   width: 50%;
   text-decoration: none;
   color: var(--color8);
+  padding: 5px;
 }
 
 .container3 > a:hover {
@@ -212,4 +216,75 @@ main {
   transform: scale(1.1);
   transition: all .3s;
 }
+
+.contact > h2 {
+  font-size: 1.9em;
+  color: var(--color2);
+}
+
+fieldset {
+  border: 1px solid #124955;
+  margin: 10px;
+  height: 550px;
+  background-color: var(--color0);
+}
+
+fieldset > form {
+  margin: 12px;
+}
+
+form > p {
+  margin: 15px 0px;
+  text-align: left;
+}
+
+form > p > label {
+  font-size: 1.4em;
+  color: var(--color2);
+}
+
+form > p > input , textarea {
+  border-radius: 8px;
+  background-color: #1b1b22;
+  border: none;
+  padding: 10px;
+  color: var(--color8);
+ font-family: Arial, Helvetica, sans-serif;
+ font-size: 1.1em; 
+ margin-top: 5px;
+ width: 100%;
+}
+
+form > p > textarea {
+  resize: none;
+}
+
+#button {
+  background-color: var(--color3);
+  cursor: pointer;
+}
+
+#button:hover {
+  background-color: #1e768a;
+  transition: all .3s;
+}
+
+footer {
+  background-color: var(--color0);
+  margin-top: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+footer > nav > a {
+  color: var(--color4);
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 5px;
+}
+
+footer > p {
+  margin-top: 15px;
+} 
+
 
