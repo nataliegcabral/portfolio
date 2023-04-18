@@ -10,7 +10,36 @@ html, body {
   font-family: Semplicita, sans-serif;
   background-color: #141419;
   color: #CAA0E6;
+  scroll-behavior: smooth;
   font-size: 1em;
+}
+html main, body main {
+  text-align: center;
+}
+
+@font-face {
+  font-family: "Majanan";
+  src: url("../fonts/majanan/Majanan.otf") format("opentype");
+}
+@font-face {
+  font-family: "Semplicita";
+  src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Majanan";
+  src: url("../fonts/majanan/Majanan.otf") format("opentype");
+}
+@font-face {
+  font-family: "Semplicita";
+  src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
+}
+.about h2 {
+  font-size: 1.9em;
+  margin: 20px;
+}
+.about .textabout {
+  font-size: 1.3em;
+  margin: 0px 10px;
 }
 
 @font-face {
@@ -37,6 +66,25 @@ html, body {
   font-family: "Semplicita";
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
+.home {
+  display: flex;
+  flex-direction: column;
+}
+.home h1 {
+  background-image: linear-gradient(to right, #A0EFFF, #CAA0E6, #FFA1AE);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-align: center;
+  padding: 30px;
+  font-size: 2.5em;
+}
+
+.line {
+  border-bottom: 1px solid #124955;
+  margin: 20px;
+}
+
 @font-face {
   font-family: "Majanan";
   src: url("../fonts/majanan/Majanan.otf") format("opentype");
@@ -45,51 +93,44 @@ html, body {
   font-family: "Semplicita";
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
-@font-face {
-  font-family: "Majanan";
-  src: url("../fonts/majanan/Majanan.otf") format("opentype");
-}
-@font-face {
-  font-family: "Semplicita";
-  src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
-}
-@font-face {
-  font-family: "Majanan";
-  src: url("../fonts/majanan/Majanan.otf") format("opentype");
-}
-@font-face {
-  font-family: "Semplicita";
-  src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
-}
-menu {
+header {
   background-color: #0b0b0e;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-menu span {
-  display: inline-block;
+header i {
+  display: flex;
   padding: 15px;
+  font-size: 2.5em;
   cursor: pointer;
-  font-size: 2em;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s;
 }
-menu span:hover {
+header i:hover {
   color: #A0EFFF;
 }
-menu .items {
+header .menu {
   text-align: right;
   font-size: 1.5em;
-  display: flex;
-  flex-direction: column;
 }
-menu .items li {
+header .menu li {
   padding: 15px;
 }
-menu .items li a {
+header .menu li a {
   text-decoration: none;
+  color: #CAA0E6;
+  transition: all 0.3s;
+}
+header .menu li a:hover {
+  color: #A0EFFF;
 }
 
+@media screen and (min-width: 768px) {
+  ul {
+    display: flex;
+    flex-direction: row;
+  }
+}
 @font-face {
   font-family: "Majanan";
   src: url("../fonts/majanan/Majanan.otf") format("opentype");

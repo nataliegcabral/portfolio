@@ -26,6 +26,24 @@
     $color9: #f1eef4;
 
 
-//FONT SIZES
+//FUNCTIONS
 
-    $default-font-size: 1em;
+@mixin gradient {
+  background-image: linear-gradient( to right, #A0EFFF, #CAA0E6, #FFA1AE);
+  background-clip: inherit;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@mixin h2-sizes {
+  font-size: 1.9em;
+  margin: 20px;
+}
+
+@mixin line {
+  .line {
+  border-bottom: 1px solid $color3;
+  margin: 20px;
+  }
+}
+

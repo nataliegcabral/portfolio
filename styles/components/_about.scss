@@ -1,1 +1,13 @@
 @import '../abstract/variables';
+
+.about {
+
+    h2 {
+        @include h2-sizes;
+    }
+
+    .textabout {
+        font-size: 1.3em;
+        margin: 0px 10px;
+    }
+}

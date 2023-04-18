@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,83 +8,76 @@
   <title>Portfolio</title>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
-<body onresize="changedSize()">
-  <!--
-    paleta de cores temporária
-    projetos do codepen temporários
-    foto temporária (talvez)
 
-    meus projetos:
-    -natflix
-    -refeições kanna
-    -verificador de idade
-    -fazer uma pagina só com minhas artes
-    -super trunfo
-    -natify
-    (CUIDADO COM OS DIREITOS AUTORAIS)
-  -->
-  <header>
+<body onresize="changedSize()" onload="carregaMenu()">
 
-      <menu class="menu">
+  <header id="home">
+    
+    <i id="burguer" class="material-icons">menu</i>
 
-        <span class="material-symbols-outlined" onclick="showMenu()">menu</span>
-
-        <ul class="items">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Projects</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-
-      </menu>
+    <menu class="menu">
+      <ul>
+        <li><a href="./#home">Home</a></li>
+        <li><a href="./#about">About</a></li>
+        <li><a href="./#projects">Projects</a></li>
+        <li><a href="./#contact">Contact</a></li>
+      </ul>
+    </menu>
 
   </header>
 
-  
+
 
   <main>
 
     <section class="home">
-        <h1>Hi, I'm Natalie Cabral and I hope you enjoy my Portfolio.</h1>
+      <h1>Hi, I'm Natalie Cabral and I hope you enjoy my Portfolio.</h1>
       <img src="images/tatalo.png" alt="">
     </section>
 
     <div class="line"></div>
 
-    <section class="about">
+    <section class="about" id="about">
 
-      
-        <h2>About Me</h2>
-        <p id="textabout">I'm a brazilian front-end software developer who likes art very much. I began my jorney as an ilustrator, because I always had interest in art and design, I even worked as a begginer tattoo artist for a while. Until I decided to transition my career and I found myself in software development. </p>
-      
+
+      <h2>About Me</h2>
+      <p class="textabout">I'm a brazilian front-end software developer who likes art very much. I began my jorney as an
+        ilustrator, because I always had interest in art and design, I even worked as a begginer tattoo artist for a
+        while. Until I decided to transition my career and I found myself in software development. </p>
+
       <h3 class="skill">Skills</h3>
       <div class="container1">
-      <img src="images/tatalo.png" alt="Skills" id="imgskill">
-      <p id="textskill">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis similique officiis ducimus magnam libero, iste provident quibusdam soluta iure tempora quos quas incidunt itaque dignissimos molestias consequatur totam alias eos.</p>
-      
+        <img src="images/tatalo.png" alt="Skills" class="imgskill">
+        <p class="textskill">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis similique officiis ducimus
+          magnam libero, iste provident quibusdam soluta iure tempora quos quas incidunt itaque dignissimos molestias
+          consequatur totam alias eos.</p>
+
       </div>
 
       <h3 class="xp">Experience</h3>
       <div class="container1">
-        <p id="textxp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio aperiam necessitatibus totam quidem ipsam voluptatibus eaque libero, magnam veniam nesciunt impedit id rerum, ducimus perspiciatis reiciendis labore debitis nisi natus!</p>
-        <img src="images/tatalo.png" alt="Experience" id="imgxp">
+        <p class="textxp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio aperiam necessitatibus totam
+          quidem ipsam voluptatibus eaque libero, magnam veniam nesciunt impedit id rerum, ducimus perspiciatis
+          reiciendis labore debitis nisi natus!</p>
+        <img src="images/tatalo.png" alt="Experience" class="imgxp">
       </div>
     </section>
-    
-    <section class="projects">
+
+    <section class="projects" id="projects">
 
       <h2>Projects</h2>
 
-      
+
       <div class="container2">
         <img src="images/tatalo.png" alt="">
         <div class="container3">
           <h3>Project Title</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus exercitationem corporis fugit doloremque consequuntur commodi expedita deserunt libero placeat ut assumenda est, debitis suscipit, quod ratione eveniet, mollitia cum ad!</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus exercitationem corporis fugit
+            doloremque consequuntur commodi expedita deserunt libero placeat ut assumenda est, debitis suscipit, quod
+            ratione eveniet, mollitia cum ad!</p>
           <a href="#" target="_blank">Check it Out</a>
         </div>
       </div>
@@ -92,7 +86,9 @@
         <img src="images/tatalo.png" alt="">
         <div class="container3">
           <h3>Project Title</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus exercitationem corporis fugit doloremque consequuntur commodi expedita deserunt libero placeat ut assumenda est, debitis suscipit, quod ratione eveniet, mollitia cum ad!</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus exercitationem corporis fugit
+            doloremque consequuntur commodi expedita deserunt libero placeat ut assumenda est, debitis suscipit, quod
+            ratione eveniet, mollitia cum ad!</p>
           <a href="#" target="_blank">Check it Out</a>
         </div>
       </div>
@@ -101,7 +97,9 @@
         <img src="images/tatalo.png" alt="">
         <div class="container3">
           <h3>Project Title</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus exercitationem corporis fugit doloremque consequuntur commodi expedita deserunt libero placeat ut assumenda est, debitis suscipit, quod ratione eveniet, mollitia cum ad!</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus exercitationem corporis fugit
+            doloremque consequuntur commodi expedita deserunt libero placeat ut assumenda est, debitis suscipit, quod
+            ratione eveniet, mollitia cum ad!</p>
           <a href="#" target="_blank">Check it Out</a>
         </div>
       </div>
@@ -110,14 +108,16 @@
         <img src="images/tatalo.png" alt="">
         <div class="container3">
           <h3>Project Title</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus exercitationem corporis fugit doloremque consequuntur commodi expedita deserunt libero placeat ut assumenda est, debitis suscipit, quod ratione eveniet, mollitia cum ad!</p>
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus exercitationem corporis fugit
+            doloremque consequuntur commodi expedita deserunt libero placeat ut assumenda est, debitis suscipit, quod
+            ratione eveniet, mollitia cum ad!</p>
           <a href="#" target="_blank">Check it Out</a>
         </div>
       </div>
 
     </section>
 
-    <section class="contact">
+    <section class="contact" id="contact">
       <h2>Contact Me!</h2>
       <fieldset>
         <form action="" method="post" autocomplete="on">
@@ -144,18 +144,20 @@
   </main>
 
   <footer>
-      <nav>
-        <a href="https://www.linkedin.com/in/natalie-c-118432110/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
+    <nav>
+      <a href="https://www.linkedin.com/in/natalie-c-118432110/" target="_blank"><i
+          class="devicon-linkedin-plain"></i></a>
 
-          <a href="https://github.com/nataliegcabral"target="_blank"><i class="devicon-github-original"></i></a>
+      <a href="https://github.com/nataliegcabral" target="_blank"><i class="devicon-github-original"></i></a>
 
-          <a href="https://www.behance.net/tatalows" target="_blank"><i class="devicon-behance-plain"></i></a>
-      </nav>
+      <a href="https://www.behance.net/tatalows" target="_blank"><i class="devicon-behance-plain"></i></a>
+    </nav>
 
     <p> &copy; Natalie Cabral 2022</p>
 
   </footer>
 
-  <script src="script.js"></script>
+  <script src="main.js"></script>
 </body>
+
 </html>
