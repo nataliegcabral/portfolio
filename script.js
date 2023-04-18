@@ -1,15 +1,15 @@
 function showMenu() {
-    if (item.style.display == 'block') {
-        item.style.display = 'none'
+    if (items.style.display == 'block') {
+        items.style.display = 'none'
     } else {
-        item.style.display = 'block'
+        items.style.display = 'block'
     }
 }
 
 function changedSize() {
     if (window.innerWidth >= 650) {
-        item.style.display = 'block'
+        items.style.display = 'block'
     } else {
-        item.style.display = 'none'
+        items.style.display = 'none'
     }
 }

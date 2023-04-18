@@ -1,290 +1,100 @@
-@charset "UTF-8";
-
 @font-face {
-  font-family: 'Majanan';
-  src: url('../fonts/majanan/Majanan.otf') format('opentype');
+  font-family: "Majanan";
+  src: url("../fonts/majanan/Majanan.otf") format("opentype");
 }
-
 @font-face {
-  font-family: 'Semplicita';
-  src: url('../fonts/semplicita/Semplicita/Semplicita\ Light.otf') format('opentype');
+  font-family: "Semplicita";
+  src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
-
-:root {
-  --color0: #0b0b0e;
-  --color1: #141419; /* lighter #E8E8ED*/
-  --color2: #A0EFFF;
-  --color3: #124955;
-  --color4: #CAA0E6;
-  --color5: #341E43; 
-  --color6: #FFA1AE;
-  --color7: #55131C;
-  --color8: #e2e1e4; /*darker #493030*/
-  --color9: #f1eef4;
-
-  --default-font: Semplicita, Helvetica, sans-serif;
-  --main-font: Majanan, Helvetica, sans-serif;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  font-size: 1em;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: var(--default-font);
-  background-color: var(--color1);
-  color: var(--color4);
-  font-weight: lighter;
-  min-height: 100vh;
+html, body {
+  font-family: Semplicita, sans-serif;
+  background-color: #141419;
+  color: #CAA0E6;
   font-size: 1em;
 }
 
-header {
-  background-color: var(--color0);
+@font-face {
+  font-family: "Majanan";
+  src: url("../fonts/majanan/Majanan.otf") format("opentype");
+}
+@font-face {
+  font-family: "Semplicita";
+  src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Majanan";
+  src: url("../fonts/majanan/Majanan.otf") format("opentype");
+}
+@font-face {
+  font-family: "Semplicita";
+  src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Majanan";
+  src: url("../fonts/majanan/Majanan.otf") format("opentype");
+}
+@font-face {
+  font-family: "Semplicita";
+  src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Majanan";
+  src: url("../fonts/majanan/Majanan.otf") format("opentype");
+}
+@font-face {
+  font-family: "Semplicita";
+  src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Majanan";
+  src: url("../fonts/majanan/Majanan.otf") format("opentype");
+}
+@font-face {
+  font-family: "Semplicita";
+  src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
+}
+@font-face {
+  font-family: "Majanan";
+  src: url("../fonts/majanan/Majanan.otf") format("opentype");
+}
+@font-face {
+  font-family: "Semplicita";
+  src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
+}
+menu {
+  background-color: #0b0b0e;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
 }
-
-#burguer {
+menu span {
   display: inline-block;
-  padding: 15px 35px;
+  padding: 15px;
   cursor: pointer;
-  font-size: 2.5em;
+  font-size: 2em;
+  transition: all 0.3s ease-in-out;
 }
-
-#burguer:hover {
-  color: var(--color2);
-  transition: all .3s ease-in-out;
+menu span:hover {
+  color: #A0EFFF;
 }
-
-menu {
+menu .items {
   text-align: right;
-  font-size: 1.5em;  
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
 }
-
-menu > ul {
-  list-style-type: none;
-  padding: 10px 20px;
-}
-
-menu > ul > li {
+menu .items li {
   padding: 15px;
 }
-
-menu > ul > li > a {
-
+menu .items li a {
   text-decoration: none;
-  color: var(--color4);
 }
 
-menu > ul > li > a:hover {
-  text-decoration: underline solid 1px;
+@font-face {
+  font-family: "Majanan";
+  src: url("../fonts/majanan/Majanan.otf") format("opentype");
 }
-
-main {
-  text-align: center;
-}
-
-.home {
-  display: flex;
-  flex-direction: column;
-}
-
-.home > h1 {
-  background-image: linear-gradient( to right, #A0EFFF, #CAA0E6, #FFA1AE);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  padding: 30px;
-  font-size: 2.4em;
-}
-
-/* h2, h3 {
-  background-image: linear-gradient( to right, #A0EFFF, #CAA0E6, #FFA1AE);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-} */
-
-.home > img {
-  margin: auto;
-}
-
-.line {
-  border-bottom: 1px solid var(--color3);
-  margin: 20px;
-
-}
-
-.about > h2, .projects > h2 {
-  font-size: 1.9em;
-  margin: 20px;
-}
-
-#textabout {
-  font-size: 1.3em;
-  margin: 0px 10px;
-}
-
-.container1 {
-  margin: 0px 10px 50px 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.skill {
-  text-align: right;
-  font-size: 1.8em;
-  margin: 30px 10px;
-}
-
-#textskill {
-  text-align: right;
-  width: 32%;
-}
-
-#imgskill {
-  align-self: flex-start;
-  width: 50%;
-  margin: 10px;
-}
-
-.xp {
-  text-align: left;
-  font-size: 1.8em;
-  margin: 30px 10px;
-}
-
-#textxp {
-  text-align: left;
-  width: 35%;
-}
-
-#imgxp {
-  align-self: flex-end;
-  width: 50%;
-  margin: 10px;
-}
-
-.container2 {
-  margin: 0px 10px 50px 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-
-.container2 > img {
-  width: 50%;
-  height: 50%;
-}
-
-.container3 {
-  margin: 0px 10px 50px 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.container3 > h3 {
-  font-size: 1.5em;
-}
-
-.container3 > p {
-  margin: 20px 5px;
-  font-size: 1.1em;
-} 
-
-.container3 > a {
-  align-self: center;
-  background-color: var(--color5);
-  border-radius: 30px;
-  text-align: center;
-  width: 50%;
-  text-decoration: none;
-  color: var(--color8);
-  padding: 5px;
-}
-
-.container3 > a:hover {
-  background-color: var(--color4);
-  transform: scale(1.1);
-  transition: all .3s;
-}
-
-.contact > h2 {
-  font-size: 1.9em;
-  color: var(--color2);
-}
-
-fieldset {
-  border: 1px solid #124955;
-  margin: 10px;
-  height: 550px;
-  background-color: var(--color0);
-}
-
-fieldset > form {
-  margin: 12px;
-}
-
-form > p {
-  margin: 15px 0px;
-  text-align: left;
-}
-
-form > p > label {
-  font-size: 1.4em;
-  color: var(--color2);
-}
-
-form > p > input , textarea {
-  border-radius: 8px;
-  background-color: #1b1b22;
-  border: none;
-  padding: 10px;
-  color: var(--color8);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1.1em; 
-  margin-top: 5px;
-  width: 100%;
-}
-
-form > p > textarea {
-  resize: none;
-}
-
-#button {
-  background-color: var(--color3);
-  cursor: pointer;
-}
-
-#button:hover {
-  background-color: #1e768a;
-  transition: all .3s;
-}
-
-footer {
-  background-color: var(--color0);
-  margin-top: 20px;
-  text-align: center;
-  padding: 10px;
-}
-
-footer > nav > a {
-  color: var(--color4);
-  text-decoration: none;
-  font-size: 1.5em;
-  margin: 5px;
-}
-
-footer > p {
-  margin-top: 15px;
-} 
-
-
+@font-face {
+  font-family: "Semplicita";
+  src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
+}/*# sourceMappingURL=style.css.map */
