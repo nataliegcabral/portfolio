@@ -6,9 +6,10 @@ html, body {
     color: $color4;
     scroll-behavior: smooth;
     font-size: 1em;
+    box-sizing: border-box;
 
-    main {
-        text-align: center;
-    }   
+        main {
+            text-align: center;
+        }   
 }
 

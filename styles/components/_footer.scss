@@ -1,1 +1,22 @@
 @import '../abstract/variables';
+
+footer {
+    background-color: var(--color0);
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+
+    nav {
+
+        a {
+            color: var(--color4);
+            text-decoration: none;
+            font-size: 1.5em;
+            margin: 5px;
+        }
+    }
+
+    p {
+        margin-top: 15px;
+    }
+}
