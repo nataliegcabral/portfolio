@@ -34,12 +34,46 @@ html main, body main {
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
 .about h2 {
-  font-size: 1.9em;
+  font-size: 2em;
   margin: 20px;
 }
 .about .textabout {
-  font-size: 1.3em;
+  font-size: 1.5em;
   margin: 0px 10px;
+}
+.about .skill {
+  text-align: right;
+  font-size: 1.8em;
+  margin: 30px 10px;
+}
+.about .xp {
+  text-align: left;
+  font-size: 1.8em;
+  margin: 30px 10px;
+}
+.about .about-flex {
+  margin: 0px 10px 50px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.about img {
+  align-self: flex-start;
+  width: 200px;
+  margin: 10px;
+}
+.about .textskill {
+  text-align: right;
+  width: 130px;
+}
+.about .textxp {
+  text-align: left;
+  width: 130px;
+}
+
+.line {
+  border-bottom: 1px solid #124955;
+  margin: 20px;
 }
 
 @font-face {
@@ -138,4 +172,20 @@ header .menu li a:hover {
 @font-face {
   font-family: "Semplicita";
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
+}
+.projects h2 {
+  font-size: 2em;
+  margin: 20px;
+}
+.projects .project {
+  margin: 0px 10px 50px 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.projects .project project-container {
+  margin: 0px 10px 50px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }/*# sourceMappingURL=style.css.map */

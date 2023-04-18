@@ -1,1 +1,18 @@
 @import '../abstract/variables';
+
+.projects {
+    h2 {
+        font-size: 2em;
+        margin: 20px;
+    }
+
+    .project {
+        @include project(row);
+
+        project-container {
+            @include project(column);
+        }
+    }
+
+
+}

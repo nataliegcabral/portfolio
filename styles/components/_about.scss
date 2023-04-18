@@ -3,11 +3,40 @@
 .about {
 
     h2 {
-        @include h2-sizes;
+        font-size: 2em;
+        margin: 20px;
     }
 
     .textabout {
-        font-size: 1.3em;
+        font-size: 1.5em;
         margin: 0px 10px;
     }
+
+    .skill {
+        @include about-title(right);
+    }
+
+    .xp {
+        @include about-title(left);
+    }
+
+    @include about-flex;
+
+        img {
+            align-self: flex-start;
+            width: 200px;
+            margin: 10px;
+        }
+
+        .textskill {
+            @include about-text(right);
+        }
+
+        .textxp {
+            @include about-text(left);
+        }
+
+
 }
+
+@include line;
