@@ -1,29 +1,26 @@
 //FONTS
-@font-face {
-  font-family: 'Majanan';
-  src: url('../fonts/majanan/Majanan.otf') format('opentype');
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap');
 
 @font-face {
   font-family: 'Semplicita';
   src: url('../fonts/semplicita/Semplicita/Semplicita\ Light.otf') format('opentype');
 }
 
-$default-font: Semplicita, sans-serif;
-$header-font: Majanan, sans-serif;
+
+
+$default-font: 'Montserrat', sans-serif;
+$display-font: 'Oswald', sans-serif;
 
 //COLORS
 
 $color0: #0b0b0e;
-$color1: #141419;
-$color2: #A0EFFF;
-$color3: #124955;
-$color4: #CAA0E6;
-$color5: #341E43;
-$color6: #FFA1AE;
-$color7: #55131C;
-$color8: #e2e1e4;
-$color9: #f1eef4;
+$color1: #381460;
+$color2: #6c32af;
+$color3: #189676;
+$color4: #79cab6;
+$color5: #f5f5f5;
+$color6: #151520;
+
 
 
 //FUNCTIONS
@@ -35,31 +32,20 @@ $color9: #f1eef4;
   -webkit-text-fill-color: transparent;
 }
 
+@mixin dark-mode {
+  color: $color2;
+
+  &:hover {
+    color: $color1;
+  }
+
+}
+
 @mixin line {
   .line {
     border-bottom: 1px solid $color3;
     margin: 20px;
   }
-}
-
-@mixin about-title($align) {
-  text-align: $align;
-  font-size: 1.8em;
-  margin: 30px 10px;
-}
-
-@mixin about-flex {
-  .about-flex {
-    margin: 0px 10px 50px 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
-}
-
-@mixin about-text($align) {
-  text-align: $align;
-  width: 130px;
 }
 
 @mixin project($direction) {

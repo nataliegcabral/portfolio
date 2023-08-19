@@ -1,101 +1,148 @@
-@font-face {
-  font-family: "Majanan";
-  src: url("../fonts/majanan/Majanan.otf") format("opentype");
-}
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald&display=swap");
 @font-face {
   font-family: "Semplicita";
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
 html, body {
-  font-family: Semplicita, sans-serif;
-  background-color: #141419;
-  color: #CAA0E6;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f5f5f5;
+  color: #381460;
   scroll-behavior: smooth;
+  line-height: 2em;
   font-size: 1em;
   box-sizing: border-box;
+  margin: 0;
+  transition: all 0.2s;
 }
 html main, body main {
   text-align: center;
 }
 
 @font-face {
-  font-family: "Majanan";
-  src: url("../fonts/majanan/Majanan.otf") format("opentype");
+  font-family: "Semplicita";
+  src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
 @font-face {
   font-family: "Semplicita";
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
-@font-face {
-  font-family: "Majanan";
-  src: url("../fonts/majanan/Majanan.otf") format("opentype");
+.dark-mode {
+  background-color: #151520;
+  color: #f5f5f5;
 }
+.dark-mode .change-theme {
+  color: #6c32af;
+}
+.dark-mode .change-theme:hover {
+  color: #381460;
+}
+.dark-mode .burguer_menu i {
+  color: #6c32af;
+}
+.dark-mode .burguer_menu i:hover {
+  color: #381460;
+}
+.dark-mode .burguer_menu .menu li a {
+  color: #6c32af;
+}
+.dark-mode .burguer_menu .menu li a:hover {
+  color: #381460;
+}
+.dark-mode .about .introduction {
+  background-color: #6c32af;
+}
+.dark-mode .skills {
+  background-color: #6c32af;
+  color: #f5f5f5;
+}
+.dark-mode .skills .developer {
+  color: #381460;
+}
+.dark-mode .skills .developer h4 {
+  color: #6c32af;
+}
+
 @font-face {
   font-family: "Semplicita";
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
-.about h2 {
+.about {
+  display: flex;
+  flex-direction: column;
+}
+.about .introduction {
+  background-color: #189676;
+  color: #f5f5f5;
+  padding: 20px;
+  margin-bottom: -50px;
+}
+.about .introduction h2 {
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
   font-size: 2em;
   margin: 20px;
 }
-.about .textabout {
+.about .introduction .introduction-text {
   font-size: 1.5em;
-  margin: 0px 10px;
+  margin: 0px auto;
+  padding-bottom: 80px;
+  max-width: 600px;
 }
-.about .skill {
-  text-align: right;
-  font-size: 1.8em;
-  margin: 30px 10px;
+.about .skills {
+  background-color: #f5f5f5;
+  margin: auto;
+  width: 90%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1215686275);
+  border: 1px solid #ffffff;
+  border-radius: 10px;
+  max-width: 500px;
 }
-.about .xp {
-  text-align: left;
-  font-size: 1.8em;
-  margin: 30px 10px;
+.about .skills .developer {
+  font-size: 1.3em;
+  padding: 10px;
 }
-.about .about-flex {
-  margin: 0px 10px 50px 10px;
+.about .skills .developer h3 {
+  font-size: 1.5em;
+  font-family: "Oswald", sans-serif;
+  text-transform: uppercase;
+}
+.about .skills .developer h4 {
+  color: #189676;
+  padding: 20px;
+  font-weight: bold;
+}
+.about .skills .developer ul {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.about img {
-  align-self: flex-start;
-  width: 200px;
-  margin: 10px;
-}
-.about .textskill {
-  text-align: right;
-  width: 130px;
-}
-.about .textxp {
-  text-align: left;
-  width: 130px;
+  flex-direction: column;
+  list-style-type: none;
 }
 
-.line {
-  border-bottom: 1px solid #124955;
-  margin: 20px;
-}
-
-@font-face {
-  font-family: "Majanan";
-  src: url("../fonts/majanan/Majanan.otf") format("opentype");
-}
 @font-face {
   font-family: "Semplicita";
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
 .contact {
-  color: #A0EFFF;
+  color: #189676;
+  display: flex;
+  flex-direction: column;
+  margin: 20px auto;
 }
 .contact h2 {
   font-size: 2em;
 }
 .contact fieldset {
-  border: 1px solid #124955;
+  border-radius: 5px;
   margin: 15px;
-  height: 550px;
-  background-color: #0b0b0e;
+  background-color: #f5f5f5;
+  border: 1px solid #79cab6;
 }
 .contact fieldset form {
   margin: 12px;
@@ -111,11 +158,11 @@ html main, body main {
 .contact fieldset form p input,
 .contact fieldset form p textarea {
   border-radius: 8px;
-  background-color: #141419;
-  border: 1px solid #141419;
+  background-color: #f5f5f5;
+  border: 1px solid #79cab6;
   outline: none;
   padding: 10px;
-  color: #e2e1e4;
+  color: #381460;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1em;
   margin-top: 5px;
@@ -125,45 +172,48 @@ html main, body main {
 }
 .contact fieldset form p input:focus,
 .contact fieldset form p textarea:focus {
-  border: 1px solid #124955;
+  border: 1px solid #189676;
+}
+.contact fieldset form p input::-moz-placeholder, .contact fieldset form p textarea::-moz-placeholder {
+  color: #79cab6;
+}
+.contact fieldset form p input::placeholder,
+.contact fieldset form p textarea::placeholder {
+  color: #79cab6;
 }
 .contact fieldset form p .button {
-  background-color: #124955;
+  background-color: #f5f5f5;
+  color: #189676;
+  width: 100%;
+  align-items: center;
   cursor: pointer;
   transition: all 0.2s;
 }
 .contact fieldset form p .button:hover {
-  background-color: #1e768a;
+  background-color: #79cab6;
+  color: #f5f5f5;
 }
 
-@font-face {
-  font-family: "Majanan";
-  src: url("../fonts/majanan/Majanan.otf") format("opentype");
-}
 @font-face {
   font-family: "Semplicita";
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
 footer {
-  background-color: var(--color0);
-  margin-top: 20px;
+  background-color: #79cab6;
   text-align: center;
   padding: 10px;
 }
 footer nav a {
-  color: var(--color4);
+  color: #f5f5f5;
   text-decoration: none;
   font-size: 1.5em;
   margin: 5px;
 }
 footer p {
+  color: #f5f5f5;
   margin-top: 15px;
 }
 
-@font-face {
-  font-family: "Majanan";
-  src: url("../fonts/majanan/Majanan.otf") format("opentype");
-}
 @font-face {
   font-family: "Semplicita";
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
@@ -171,60 +221,97 @@ footer p {
 .home {
   display: flex;
   flex-direction: column;
+  max-width: 900px;
+  margin: auto;
 }
 .home h1 {
-  background-image: linear-gradient(to right, #A0EFFF, #CAA0E6, #FFA1AE);
-  background-clip: inherit;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-align: center;
-  padding: 30px;
+  padding: 20px;
   font-size: 2.5em;
+  max-width: 500px;
+  margin: auto;
+  line-height: 1em;
+}
+.home .photo {
+  content: url("../../images/tatalo.png");
+  width: 300px;
+  margin: auto;
+  padding: 20px 10px;
+}
+@media screen and (min-width: 768px) {
+  .home {
+    flex-direction: row;
+    align-items: center;
+  }
+  .home .photo {
+    width: 250px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .home {
+    justify-content: space-evenly;
+  }
 }
 
 .line {
-  border-bottom: 1px solid #124955;
+  border-bottom: 1px solid #189676;
   margin: 20px;
 }
 
-@font-face {
-  font-family: "Majanan";
-  src: url("../fonts/majanan/Majanan.otf") format("opentype");
-}
 @font-face {
   font-family: "Semplicita";
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
 header {
-  background-color: #0b0b0e;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  justify-items: end;
+  align-items: center;
+}
+header .change-theme {
+  margin: 10px;
+  align-self: baseline;
+  background: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #79cab6;
+  transition: all 0.2s;
+}
+header .change-theme:hover {
+  color: #189676;
+}
+header .burguer_menu {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  align-items: end;
 }
-header i {
-  display: flex;
+header .burguer_menu i {
   padding: 15px;
-  font-size: 2.5em;
+  font-size: 2em;
+  color: #79cab6;
   cursor: pointer;
   transition: all 0.2s;
 }
-header i:hover {
-  color: #A0EFFF;
+header .burguer_menu i:hover {
+  color: #189676;
 }
-header .menu {
+header .burguer_menu .menu {
   text-align: right;
   font-size: 1.5em;
 }
-header .menu li {
+header .burguer_menu .menu ul {
+  list-style-type: none;
+}
+header .burguer_menu .menu li {
   padding: 15px;
 }
-header .menu li a {
+header .burguer_menu .menu li a {
   text-decoration: none;
-  color: #CAA0E6;
+  color: #79cab6;
   transition: all 0.2s;
 }
-header .menu li a:hover {
-  color: #A0EFFF;
+header .burguer_menu .menu li a:hover {
+  color: #189676;
 }
 
 @media screen and (min-width: 768px) {
@@ -234,27 +321,29 @@ header .menu li a:hover {
   }
 }
 @font-face {
-  font-family: "Majanan";
-  src: url("../fonts/majanan/Majanan.otf") format("opentype");
-}
-@font-face {
   font-family: "Semplicita";
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
+.projects {
+  margin: 50px 0px;
+}
 .projects h2 {
+  font-family: "Oswald", sans-serif;
   font-size: 2em;
   margin: 20px;
+  text-transform: uppercase;
 }
 .projects .project {
   margin: 0px 10px 50px 10px;
   padding: 10px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 .projects .project img {
-  width: 50%;
-  height: 50%;
+  width: 80%;
+  margin: auto;
+  border-radius: 5px;
 }
 .projects .project .project-container {
   margin: 0px 10px 50px 10px;
@@ -271,15 +360,15 @@ header .menu li a:hover {
 }
 .projects .project .project-container a {
   align-self: center;
-  background-color: #341E43;
+  background-color: #79cab6;
   border-radius: 30px;
   text-align: center;
   width: 50%;
   text-decoration: none;
-  color: #e2e1e4;
+  color: #f5f5f5;
   padding: 5px;
   transition: all 0.2s;
 }
 .projects .project .project-container a:hover {
-  background-color: #CAA0E6;
+  background-color: #189676;
 }/*# sourceMappingURL=style.css.map */

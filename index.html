@@ -8,24 +8,29 @@
   <title>Portfolio | Natalie Cabral</title>
   <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+          
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body onresize="changedSize()" onload="carregaMenu()">
 
-  <header id="home">
-    
-    <i id="burguer" class="material-icons">menu</i>
+  <header class="header" id="home">
 
-    <menu class="menu">
-      <ul>
-        <li><a href="./#home">Home</a></li>
-        <li><a href="./#about">About</a></li>
-        <li><a href="./#projects">Projects</a></li>
-        <li><a href="./#contact">Contact</a></li>
-      </ul>
-    </menu>
+    <button class="change-theme" id="btn"><span class="material-icons">dark_mode</span></button>
+
+    <div class="burguer_menu">
+      <i id="burguer" class="material-icons">menu</i>
+      <menu class="menu">
+        <ul>
+          <li><a href="./#home">Home</a></li>
+          <li><a href="./#about">About</a></li>
+          <li><a href="./#projects">Projects</a></li>
+          <li><a href="./#contact">Contact</a></li>
+        </ul>
+      </menu>
+    </div>
+
 
   </header>
 
@@ -34,41 +39,40 @@
   <main>
 
     <section class="home">
-      <h1>Hi, I'm Natalie Cabral and I'm a brazilian software developer who's passionate about it.</h1>
-      <img src="images/tatalo.png" alt="">
+      <h1>Hi, I'm Natalie Cabral. Good to see you here.</h1>
+      <div class="photo"></div>
     </section>
-
-    <div class="line"></div>
 
     <section class="about" id="about">
 
+      <div class="introduction">
+        <h2>Who am I?</h2>
+        <p class="introduction-text">
+          I'm brazilian and I've always had interest in art, design and creation. Determined to discover
+          new areas around technology besides design and illustration, I decided to delve deeper into the universe of programming.</p>
+      </div>
 
-      <h2>About Me</h2>
-      <p class="textabout">
-        I began my jorney as an ilustrator, because I've always had interest in art, design and creation. Determined to discover new areas, I decided to delve deeper into the universe of programming.
-        
-        So, joining my interest in art with my will to learn, I started studying front-end development. Currently, I'm studying web development at college and I'm in constant learning process to work with what I like in the future.</p>
+      <div class="skills">
 
-        
-      <h3 class="skill">Skills</h3>
-      <div class="about-flex">
-      <img src="images/tatalo.png" alt="Skills" class="imgskill">
-        <p class="textskill">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis similique officiis ducimus
-          magnam libero, iste provident quibusdam soluta iure tempora quos quas incidunt itaque dignissimos molestias
-          consequatur totam alias eos.</p>
+        <div class="developer">
+        <h3>Web Developer</h3>
+        <p></p>
+        <h4>Languages and Tools:</h4>
+          <ul>
+            <li>JavaScript</li>
+            <li>ReactJS</li>
+            <li>Python</li>            
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>Scss</li>
+            <li>C</li>
+
+          </ul>
+        </div>
 
       </div>
 
-      <h3 class="xp">Experience</h3>
-      <div class="about-flex">
-        <p class="textxp">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio aperiam necessitatibus totam
-          quidem ipsam voluptatibus eaque libero, magnam veniam nesciunt impedit id rerum, ducimus perspiciatis
-          reiciendis labore debitis nisi natus!</p>
-        <img src="images/tatalo.png" alt="Experience" class="imgxp">
-      </div>
     </section>
-
-    <div class="line"></div>
 
     <section class="projects" id="projects">
 
@@ -76,40 +80,16 @@
 
 
       <div class="project">
-        <img src="images/tatalo.png" alt="">
+        <img src="images/project1.png" alt="">
         <div class="project-container">
-          <h3>Project Title</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus exercitationem corporis fugit
-            doloremque consequuntur commodi expedita deserunt libero placeat ut assumenda est, debitis suscipit, quod
-            ratione eveniet, mollitia cum ad!</p>
+          <h3>GardenGuru</h3>
+          <p>This project was made with HTML and CSS, to practice forms and responsive design. The project contains a login and a sign up page, with options to sign in with Google and Facebook and a "forgot password" option (buttons with no function). The idea of the project is to create a minimalistic and monocromatic layout that follows the purpose of the app.</p>
           <a href="#" target="_blank">Check it Out</a>
         </div>
       </div>
 
       <div class="project">
-        <img src="images/tatalo.png" alt="">
-        <div class="project-container">
-          <h3>Project Title</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus exercitationem corporis fugit
-            doloremque consequuntur commodi expedita deserunt libero placeat ut assumenda est, debitis suscipit, quod
-            ratione eveniet, mollitia cum ad!</p>
-          <a href="#" target="_blank">Check it Out</a>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="images/tatalo.png" alt="">
-        <div class="project-container">
-          <h3>Project Title</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus exercitationem corporis fugit
-            doloremque consequuntur commodi expedita deserunt libero placeat ut assumenda est, debitis suscipit, quod
-            ratione eveniet, mollitia cum ad!</p>
-          <a href="#" target="_blank">Check it Out</a>
-        </div>
-      </div>
-
-      <div class="project">
-        <img src="images/tatalo.png" alt="">
+        <img src="images/project2.png" alt="">
         <div class="project-container">
           <h3>Project Title</h3>
           <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus exercitationem corporis fugit
@@ -149,8 +129,7 @@
 
   <footer>
     <nav>
-      <a href="https://www.linkedin.com/in/natalie-c-118432110/" target="_blank"><i
-          class="devicon-linkedin-plain"></i></a>
+      <a href="https://www.linkedin.com/in/natalie-c-118432110/" target="_blank"><i class="devicon-linkedin-plain"></i></a>
 
       <a href="https://github.com/nataliegcabral" target="_blank"><i class="devicon-github-original"></i></a>
 
@@ -162,6 +141,7 @@
   </footer>
 
   <script src="main.js"></script>
+  <script src="darkmode.js"></script>
 </body>
 
 </html>

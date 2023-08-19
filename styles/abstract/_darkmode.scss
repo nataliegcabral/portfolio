@@ -1,0 +1,45 @@
+@import './variables';
+
+.dark-mode {
+    background-color: $color6;
+    color: $color5;
+
+    .change-theme {
+        @include dark-mode;
+    }
+
+    .burguer_menu {
+        i {
+            @include dark-mode;
+        }
+
+        .menu {
+            li {
+                a {
+                    @include dark-mode;
+                }
+            }
+        }
+    }
+
+    .about {
+        .introduction {
+            background-color: $color2;
+        }
+    }
+
+    .skills {
+        background-color: $color2;
+        color: $color5;
+
+        .developer {
+            color: $color1;
+            
+            h4 {
+                color: $color2;
+            }
+
+        }
+
+    }
+}

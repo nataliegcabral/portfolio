@@ -1,42 +1,65 @@
 @import '../abstract/variables';
 
-.about {
+.about {        
+    display: flex;
+    flex-direction: column;
 
-    h2 {
-        font-size: 2em;
-        margin: 20px;
-    }
+    .introduction {
+        background-color: $color3;
+        color: $color5;
+        padding: 20px;
+        margin-bottom: -50px;
 
-    .textabout {
-        font-size: 1.5em;
-        margin: 0px 10px;
-    }
+        h2 {
 
-    .skill {
-        @include about-title(right);
-    }
-
-    .xp {
-        @include about-title(left);
-    }
-
-    @include about-flex;
-
-        img {
-            align-self: flex-start;
-            width: 200px;
-            margin: 10px;
+            font-family: $display-font;
+            text-transform: uppercase;
+            font-size: 2em;
+            margin: 20px;
         }
 
-        .textskill {
-            @include about-text(right);
-        }
+        .introduction-text {
+            font-size: 1.5em;
+            margin: 0px auto;
+            padding-bottom: 80px;
+            max-width: 600px;
+        }        
+    }
 
-        .textxp {
-            @include about-text(left);
+    .skills {
+        background-color: $color5;
+        margin: auto;
+        width: 90%;
+        box-shadow: 1px 1px 10px #0000001f;
+        border: 1px solid #ffffff;
+        border-radius: 10px;
+        max-width: 500px;
+        
+
+        .developer {
+            font-size: 1.3em;
+            padding: 10px;
+
+            h3 {
+                font-size: 1.5em;
+                font-family: $display-font;
+                text-transform: uppercase;
+            }
+            
+            h4 {
+                color: $color3;
+                padding: 20px;
+                font-weight: bold;
+            }
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                list-style-type: none;
+            }
         }
+    }
+
 
 
 }
-
-@include line;

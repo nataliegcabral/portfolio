@@ -3,14 +3,37 @@
 .home {
     display: flex;
     flex-direction: column;
+    max-width: 900px;
+    margin: auto;
 
     h1 {
-        @include gradient;
-        text-align: center;
-        padding: 30px;
+        padding: 20px;
         font-size: 2.5em;
+        max-width: 500px;
+        margin: auto;
+        line-height: 1em;
     }
 
+    .photo {
+        content: url('../../images/tatalo.png');
+        width: 300px;
+        margin: auto;
+        padding: 20px 10px;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+        align-items: center;
+
+        .photo {
+            width: 250px;
+        }
+    }
+
+    @media screen and (min-width: 992px) {
+        justify-content: space-evenly;
+    
+    }
 }
 
 

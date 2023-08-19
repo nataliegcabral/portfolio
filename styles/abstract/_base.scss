@@ -2,14 +2,19 @@
 
 html, body {
     font-family: $default-font;
-    background-color: $color1;
-    color: $color4;
+    background-color: $color5;
+    color: $color1;
     scroll-behavior: smooth;
+    line-height: 2em;
     font-size: 1em;
     box-sizing: border-box;
+    margin: 0;
+    
+    
+    @include transition;
 
         main {
             text-align: center;
-        }   
+        }
 }
 

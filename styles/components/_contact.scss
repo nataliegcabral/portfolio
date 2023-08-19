@@ -1,7 +1,10 @@
 @import '../abstract/variables';
 
 .contact {
-    color: $color2;
+    color: $color3;
+    display: flex;
+    flex-direction: column;
+    margin: 20px auto;
 
     h2 {
         font-size: 2em;
@@ -9,10 +12,10 @@
 
 
     fieldset {
-        border: 1px solid $color3;
+        border-radius: 5px;
         margin: 15px;
-        height: 550px;
-        background-color: $color0;
+        background-color: $color5;
+        border: 1px solid $color4;
 
         form {
             margin: 12px;
@@ -29,11 +32,11 @@
                 input,
                 textarea {
                     border-radius: 8px;
-                    background-color: $color1;
-                    border: 1px solid $color1;
+                    background-color: $color5;
+                    border: 1px solid $color4;
                     outline: none;
                     padding: 10px;
-                    color: $color8;
+                    color: $color1;
                     font-family: Arial, Helvetica, sans-serif;
                     font-size: 1.1em;
                     margin-top: 5px;
@@ -43,17 +46,24 @@
 
                     &:focus {
                         border: 1px solid $color3;
-                        
+                    }
+
+                    &::placeholder {
+                        color: $color4;
                     }
                 }
 
                 .button {
-                    background-color: $color3;
+                    background-color: $color5;
+                    color: $color3;
+                    width: 100%;
+                    align-items: center;
                     cursor: pointer;
                     @include transition;
 
                     &:hover {
-                        background-color: #1e768a;
+                        background-color: $color4;
+                        color: $color5;
                         
                     }
                 }

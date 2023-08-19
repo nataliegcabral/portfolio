@@ -1,17 +1,22 @@
 @import '../abstract/variables';
 
 .projects {
+    margin: 50px 0px;
+
     h2 {
+        font-family: $display-font;
         font-size: 2em;
         margin: 20px;
+        text-transform: uppercase
     }
 
     .project {
-        @include project(row);
+        @include project(column);
 
         img {
-            width: 50%;
-            height: 50%;
+            width: 80%;
+            margin: auto;
+            border-radius: 5px;
         }
 
         .project-container {
@@ -27,17 +32,17 @@
 
             a {
                 align-self: center;
-                background-color: $color5;
+                background-color: $color4;
                 border-radius: 30px;
                 text-align: center;
                 width: 50%;
                 text-decoration: none;
-                color: $color8;
+                color: $color5;
                 padding: 5px;
                 @include transition;
 
                 &:hover {
-                    background-color: $color4;
+                    background-color: $color3;
                 }
             }
         }
