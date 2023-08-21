@@ -16,9 +16,9 @@ $display-font: 'Oswald', sans-serif;
 $color0: #0b0b0e;
 $color1: #381460;
 $color2: #6c32af;
-$color3: #189676;
+$color3: #4a9280;
 $color4: #79cab6;
-$color5: #f5f5f5;
+$color5: #ebebeb;
 $color6: #151520;
 
 
@@ -49,8 +49,7 @@ $color6: #151520;
 }
 
 @mixin project($direction) {
-    margin: 0px 10px 50px 10px;
-    padding: 10px;
+    margin: 30px;
     display: flex;
     flex-direction: $direction;
     justify-content: center;

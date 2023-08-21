@@ -4,16 +4,17 @@
     color: $color3;
     display: flex;
     flex-direction: column;
-    margin: 20px auto;
+    margin: 0px auto;
+    max-width: 800px;
 
-    h2 {
+    h3 {
         font-size: 2em;
     }
 
 
     fieldset {
         border-radius: 5px;
-        margin: 15px;
+        margin: 20px;
         background-color: $color5;
         border: 1px solid $color4;
 
@@ -55,7 +56,7 @@
 
                 .button {
                     background-color: $color5;
-                    color: $color3;
+                    color: $color4;
                     width: 100%;
                     align-items: center;
                     cursor: pointer;
@@ -70,4 +71,6 @@
             }
         }
     }
+
+
 }

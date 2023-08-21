@@ -13,7 +13,7 @@
 }
 html, body {
   font-family: "Montserrat", sans-serif;
-  background-color: #f5f5f5;
+  background-color: #ebebeb;
   color: #381460;
   scroll-behavior: smooth;
   line-height: 2em;
@@ -22,8 +22,21 @@ html, body {
   margin: 0;
   transition: all 0.2s;
 }
+html h3, body h3 {
+  color: #4a9280;
+  text-transform: uppercase;
+  font-family: "Oswald", sans-serif;
+}
 html main, body main {
   text-align: center;
+  margin: 20px auto;
+}
+html main #go-up, body main #go-up {
+  color: #79cab6;
+  cursor: pointer;
+}
+html main #go-up:hover, body main #go-up:hover {
+  color: #4a9280;
 }
 
 @font-face {
@@ -36,7 +49,23 @@ html main, body main {
 }
 .dark-mode {
   background-color: #151520;
-  color: #f5f5f5;
+  color: #ebebeb;
+}
+.dark-mode section h1,
+.dark-mode section h3 {
+  color: #6c32af;
+}
+.dark-mode section .project .project-container h4 {
+  color: #6c32af;
+}
+.dark-mode section .project .project-container a {
+  background-color: #6c32af;
+}
+.dark-mode section .project .project-container a:hover {
+  background-color: #381460;
+}
+.dark-mode section .skills .developer h4 {
+  color: #381460;
 }
 .dark-mode .change-theme {
   color: #6c32af;
@@ -57,17 +86,48 @@ html main, body main {
   color: #381460;
 }
 .dark-mode .about .introduction {
-  background-color: #6c32af;
+  background-color: #381460;
 }
 .dark-mode .skills {
   background-color: #6c32af;
-  color: #f5f5f5;
 }
 .dark-mode .skills .developer {
   color: #381460;
 }
 .dark-mode .skills .developer h4 {
   color: #6c32af;
+}
+.dark-mode .contact fieldset {
+  background-color: #151520;
+  border: 1px solid #6c32af;
+  color: #ebebeb;
+}
+.dark-mode .contact fieldset input,
+.dark-mode .contact fieldset textarea {
+  border: 1px solid #381460;
+  background-color: #151520;
+  color: #ebebeb;
+}
+.dark-mode .contact fieldset input:focus,
+.dark-mode .contact fieldset textarea:focus {
+  border: 1px solid #6c32af;
+}
+.dark-mode .contact fieldset input::-moz-placeholder, .dark-mode .contact fieldset textarea::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.5568627451);
+}
+.dark-mode .contact fieldset input::placeholder,
+.dark-mode .contact fieldset textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5568627451);
+}
+.dark-mode .contact fieldset .button {
+  background-color: #151520;
+  color: #6c32af;
+}
+.dark-mode .contact fieldset .button:hover {
+  background-color: #6c32af;
+}
+.dark-mode footer {
+  background-color: #381460;
 }
 
 @font-face {
@@ -79,8 +139,8 @@ html main, body main {
   flex-direction: column;
 }
 .about .introduction {
-  background-color: #189676;
-  color: #f5f5f5;
+  background-color: #79cab6;
+  color: #ebebeb;
   padding: 20px;
   margin-bottom: -50px;
 }
@@ -97,7 +157,7 @@ html main, body main {
   max-width: 600px;
 }
 .about .skills {
-  background-color: #f5f5f5;
+  background-color: #ebebeb;
   margin: auto;
   width: 90%;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1215686275);
@@ -115,7 +175,7 @@ html main, body main {
   text-transform: uppercase;
 }
 .about .skills .developer h4 {
-  color: #189676;
+  color: #79cab6;
   padding: 20px;
   font-weight: bold;
 }
@@ -123,6 +183,8 @@ html main, body main {
   display: flex;
   flex-direction: column;
   list-style-type: none;
+  line-height: 2em;
+  padding: 0;
 }
 
 @font-face {
@@ -130,18 +192,19 @@ html main, body main {
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
 .contact {
-  color: #189676;
+  color: #4a9280;
   display: flex;
   flex-direction: column;
-  margin: 20px auto;
+  margin: 0px auto;
+  max-width: 800px;
 }
-.contact h2 {
+.contact h3 {
   font-size: 2em;
 }
 .contact fieldset {
   border-radius: 5px;
-  margin: 15px;
-  background-color: #f5f5f5;
+  margin: 20px;
+  background-color: #ebebeb;
   border: 1px solid #79cab6;
 }
 .contact fieldset form {
@@ -158,7 +221,7 @@ html main, body main {
 .contact fieldset form p input,
 .contact fieldset form p textarea {
   border-radius: 8px;
-  background-color: #f5f5f5;
+  background-color: #ebebeb;
   border: 1px solid #79cab6;
   outline: none;
   padding: 10px;
@@ -172,7 +235,7 @@ html main, body main {
 }
 .contact fieldset form p input:focus,
 .contact fieldset form p textarea:focus {
-  border: 1px solid #189676;
+  border: 1px solid #4a9280;
 }
 .contact fieldset form p input::-moz-placeholder, .contact fieldset form p textarea::-moz-placeholder {
   color: #79cab6;
@@ -182,8 +245,8 @@ html main, body main {
   color: #79cab6;
 }
 .contact fieldset form p .button {
-  background-color: #f5f5f5;
-  color: #189676;
+  background-color: #ebebeb;
+  color: #79cab6;
   width: 100%;
   align-items: center;
   cursor: pointer;
@@ -191,7 +254,7 @@ html main, body main {
 }
 .contact fieldset form p .button:hover {
   background-color: #79cab6;
-  color: #f5f5f5;
+  color: #ebebeb;
 }
 
 @font-face {
@@ -204,13 +267,17 @@ footer {
   padding: 10px;
 }
 footer nav a {
-  color: #f5f5f5;
+  color: #ebebeb;
   text-decoration: none;
   font-size: 1.5em;
   margin: 5px;
+  transition: all 0.2s;
+}
+footer nav a:hover {
+  font-size: 1.3em;
 }
 footer p {
-  color: #f5f5f5;
+  color: #ebebeb;
   margin-top: 15px;
 }
 
@@ -225,6 +292,7 @@ footer p {
   margin: auto;
 }
 .home h1 {
+  color: #4a9280;
   padding: 20px;
   font-size: 2.5em;
   max-width: 500px;
@@ -246,14 +314,9 @@ footer p {
     width: 250px;
   }
 }
-@media screen and (min-width: 992px) {
-  .home {
-    justify-content: space-evenly;
-  }
-}
 
 .line {
-  border-bottom: 1px solid #189676;
+  border-bottom: 1px solid #4a9280;
   margin: 20px;
 }
 
@@ -268,7 +331,7 @@ header {
   align-items: center;
 }
 header .change-theme {
-  margin: 10px;
+  margin: 15px;
   align-self: baseline;
   background: none;
   outline: none;
@@ -278,7 +341,7 @@ header .change-theme {
   transition: all 0.2s;
 }
 header .change-theme:hover {
-  color: #189676;
+  color: #4a9280;
 }
 header .burguer_menu {
   display: flex;
@@ -293,14 +356,16 @@ header .burguer_menu i {
   transition: all 0.2s;
 }
 header .burguer_menu i:hover {
-  color: #189676;
+  color: #4a9280;
 }
 header .burguer_menu .menu {
   text-align: right;
-  font-size: 1.5em;
+  font-size: 1.4em;
+  margin: 0px;
 }
 header .burguer_menu .menu ul {
   list-style-type: none;
+  margin: 0px;
 }
 header .burguer_menu .menu li {
   padding: 15px;
@@ -311,7 +376,7 @@ header .burguer_menu .menu li a {
   transition: all 0.2s;
 }
 header .burguer_menu .menu li a:hover {
-  color: #189676;
+  color: #4a9280;
 }
 
 @media screen and (min-width: 768px) {
@@ -325,38 +390,39 @@ header .burguer_menu .menu li a:hover {
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
 .projects {
-  margin: 50px 0px;
+  padding: 50px 0px;
 }
-.projects h2 {
-  font-family: "Oswald", sans-serif;
-  font-size: 2em;
-  margin: 20px;
-  text-transform: uppercase;
+.projects h3 {
+  font-size: 2.5em;
 }
 .projects .project {
-  margin: 0px 10px 50px 10px;
-  padding: 10px;
+  margin: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
 .projects .project img {
   width: 80%;
+  max-width: 800px;
   margin: auto;
   border-radius: 5px;
 }
 .projects .project .project-container {
-  margin: 0px 10px 50px 10px;
-  padding: 10px;
+  margin: 30px;
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
-.projects .project .project-container h3 {
+.projects .project .project-container h4 {
   font-size: 1.5em;
+  color: #4a9280;
+  margin: 0px;
 }
 .projects .project .project-container p {
   padding: 15px 0px;
+  text-align: justify;
+  max-width: 800px;
+  margin: 20px auto;
 }
 .projects .project .project-container a {
   align-self: center;
@@ -364,11 +430,12 @@ header .burguer_menu .menu li a:hover {
   border-radius: 30px;
   text-align: center;
   width: 50%;
+  max-width: 400px;
   text-decoration: none;
-  color: #f5f5f5;
+  color: #ebebeb;
   padding: 5px;
   transition: all 0.2s;
 }
 .projects .project .project-container a:hover {
-  background-color: #189676;
+  background-color: #4a9280;
 }/*# sourceMappingURL=style.css.map */

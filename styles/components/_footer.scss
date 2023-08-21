@@ -12,6 +12,12 @@ footer {
             text-decoration: none;
             font-size: 1.5em;
             margin: 5px;
+
+            @include transition;
+
+            &:hover {
+                font-size: 1.3em;
+            }
         }
     }
 

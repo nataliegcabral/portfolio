@@ -1,13 +1,9 @@
 @import '../abstract/variables';
 
 .projects {
-    margin: 50px 0px;
-
-    h2 {
-        font-family: $display-font;
-        font-size: 2em;
-        margin: 20px;
-        text-transform: uppercase
+    padding: 50px 0px;
+    h3 {
+        font-size: 2.5em;
     }
 
     .project {
@@ -15,19 +11,26 @@
 
         img {
             width: 80%;
+            max-width: 800px;
             margin: auto;
             border-radius: 5px;
         }
 
         .project-container {
+            
             @include project(column);
 
-            h3 {
+            h4 {
                 font-size: 1.5em;
+                color: $color3;
+                margin: 0px;
             }
 
             p {
                 padding: 15px 0px;
+                text-align: justify;
+                max-width: 800px;
+                margin: 20px auto;
             }
 
             a {
@@ -36,6 +39,7 @@
                 border-radius: 30px;
                 text-align: center;
                 width: 50%;
+                max-width: 400px;
                 text-decoration: none;
                 color: $color5;
                 padding: 5px;
@@ -47,6 +51,5 @@
             }
         }
     }
-
 
 }

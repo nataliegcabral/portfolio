@@ -4,6 +4,39 @@
     background-color: $color6;
     color: $color5;
 
+    section {
+        h1,
+        h3 {
+            color: $color2;
+        }
+
+        .project {
+            .project-container {
+                h4 {
+                    color: $color2;
+                }
+
+                a {
+                    background-color: $color2;
+
+                    &:hover {
+                        background-color: $color1;
+                    }
+                }
+            }
+        }
+
+        .skills {
+            .developer {
+                h4 {
+                    color: $color1;
+                }
+            }
+        }
+
+
+    }
+
     .change-theme {
         @include dark-mode;
     }
@@ -24,22 +57,57 @@
 
     .about {
         .introduction {
-            background-color: $color2;
+            background-color: $color1;
         }
     }
 
     .skills {
         background-color: $color2;
-        color: $color5;
 
         .developer {
             color: $color1;
-            
+
             h4 {
                 color: $color2;
             }
-
         }
 
+    }
+
+    .contact {
+        fieldset {
+            background-color: $color6;
+            border: 1px solid $color2;
+            color: $color5;
+
+            input,
+            textarea {
+                border: 1px solid $color1;
+                background-color: $color6;
+                color: $color5;
+
+                &:focus {
+                    border: 1px solid $color2;
+                }
+
+                &::placeholder {
+                    color: #ffffff8e;
+                }
+            }
+
+            .button {
+                background-color: $color6;
+                color: $color2;
+
+                &:hover {
+                    background-color: $color2;
+                }
+            }
+
+        }
+    }
+
+    footer {
+        background-color: $color1;
     }
 }
