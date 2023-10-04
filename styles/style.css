@@ -13,8 +13,8 @@
 }
 html, body {
   font-family: "Montserrat", sans-serif;
-  background-color: #ebebeb;
-  color: #381460;
+  background-color: #f0f0f0;
+  color: #572d86;
   scroll-behavior: smooth;
   line-height: 2em;
   font-size: 1em;
@@ -23,7 +23,7 @@ html, body {
   transition: all 0.2s;
 }
 html h3, body h3 {
-  color: #4a9280;
+  color: #884fc9;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
 }
@@ -32,11 +32,11 @@ html main, body main {
   margin: 20px auto;
 }
 html main #go-up, body main #go-up {
-  color: #79cab6;
+  color: #884fc9;
   cursor: pointer;
 }
 html main #go-up:hover, body main #go-up:hover {
-  color: #4a9280;
+  color: #884fc9;
 }
 
 @font-face {
@@ -48,69 +48,54 @@ html main #go-up:hover, body main #go-up:hover {
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
 .dark-mode {
-  background-color: #151520;
-  color: #ebebeb;
+  background-color: #212031;
+  color: #f0f0f0;
 }
-.dark-mode section h1,
-.dark-mode section h3 {
-  color: #6c32af;
+.dark-mode section h1 {
+  color: #a76beb;
+}
+.dark-mode section .project {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4862745098);
 }
 .dark-mode section .project .project-container h4 {
-  color: #6c32af;
+  color: #a76beb;
 }
 .dark-mode section .project .project-container a {
-  background-color: #6c32af;
+  background-color: #a76beb;
 }
 .dark-mode section .project .project-container a:hover {
-  background-color: #381460;
+  background-color: #884fc9;
+}
+.dark-mode section .project .project-container a:active {
+  background-color: #572d86;
+}
+.dark-mode section .skills {
+  background-color: #212031;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4862745098);
+}
+.dark-mode section .skills .developer h3, .dark-mode section .skills .developer li {
+  color: #f0f0f0;
 }
 .dark-mode section .skills .developer h4 {
-  color: #381460;
-}
-.dark-mode .change-theme {
-  color: #6c32af;
-}
-.dark-mode .change-theme:hover {
-  color: #381460;
-}
-.dark-mode .burguer_menu i {
-  color: #6c32af;
-}
-.dark-mode .burguer_menu i:hover {
-  color: #381460;
-}
-.dark-mode .burguer_menu .menu li a {
-  color: #6c32af;
-}
-.dark-mode .burguer_menu .menu li a:hover {
-  color: #381460;
+  color: #a76beb;
 }
 .dark-mode .about .introduction {
-  background-color: #381460;
-}
-.dark-mode .skills {
-  background-color: #6c32af;
-}
-.dark-mode .skills .developer {
-  color: #381460;
-}
-.dark-mode .skills .developer h4 {
-  color: #6c32af;
+  background-color: #572d86;
 }
 .dark-mode .contact fieldset {
-  background-color: #151520;
-  border: 1px solid #6c32af;
-  color: #ebebeb;
+  background-color: #212031;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4862745098);
+  color: #f0f0f0;
 }
 .dark-mode .contact fieldset input,
 .dark-mode .contact fieldset textarea {
-  border: 1px solid #381460;
-  background-color: #151520;
-  color: #ebebeb;
+  border: 1px solid #572d86;
+  background-color: #212031;
+  color: #f0f0f0;
 }
 .dark-mode .contact fieldset input:focus,
 .dark-mode .contact fieldset textarea:focus {
-  border: 1px solid #6c32af;
+  border: 1px solid #a76beb;
 }
 .dark-mode .contact fieldset input::-moz-placeholder, .dark-mode .contact fieldset textarea::-moz-placeholder {
   color: rgba(255, 255, 255, 0.5568627451);
@@ -119,15 +104,8 @@ html main #go-up:hover, body main #go-up:hover {
 .dark-mode .contact fieldset textarea::placeholder {
   color: rgba(255, 255, 255, 0.5568627451);
 }
-.dark-mode .contact fieldset .button {
-  background-color: #151520;
-  color: #6c32af;
-}
-.dark-mode .contact fieldset .button:hover {
-  background-color: #6c32af;
-}
 .dark-mode footer {
-  background-color: #381460;
+  background-color: #572d86;
 }
 
 @font-face {
@@ -139,8 +117,8 @@ html main #go-up:hover, body main #go-up:hover {
   flex-direction: column;
 }
 .about .introduction {
-  background-color: #79cab6;
-  color: #ebebeb;
+  background-color: #a76beb;
+  color: #f0f0f0;
   padding: 20px;
   margin-bottom: -50px;
 }
@@ -157,11 +135,10 @@ html main #go-up:hover, body main #go-up:hover {
   max-width: 600px;
 }
 .about .skills {
-  background-color: #ebebeb;
+  background-color: #f0f0f0;
   margin: auto;
   width: 90%;
   box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1215686275);
-  border: 1px solid #ffffff;
   border-radius: 10px;
   max-width: 500px;
 }
@@ -171,16 +148,18 @@ html main #go-up:hover, body main #go-up:hover {
 }
 .about .skills .developer h3 {
   font-size: 1.5em;
+  color: #a76beb;
   font-family: "Oswald", sans-serif;
   text-transform: uppercase;
 }
 .about .skills .developer h4 {
-  color: #79cab6;
+  color: #884fc9;
   padding: 20px;
   font-weight: bold;
 }
 .about .skills .developer ul {
   display: flex;
+  color: #a76beb;
   flex-direction: column;
   list-style-type: none;
   line-height: 2em;
@@ -192,7 +171,7 @@ html main #go-up:hover, body main #go-up:hover {
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
 .contact {
-  color: #4a9280;
+  color: #a76beb;
   display: flex;
   flex-direction: column;
   margin: 0px auto;
@@ -202,13 +181,14 @@ html main #go-up:hover, body main #go-up:hover {
   font-size: 2em;
 }
 .contact fieldset {
-  border-radius: 5px;
+  border-radius: 2px;
   margin: 20px;
-  background-color: #ebebeb;
-  border: 1px solid #79cab6;
+  background-color: #f0f0f0;
+  border: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1215686275);
 }
 .contact fieldset form {
-  margin: 12px;
+  margin: 12px auto;
 }
 .contact fieldset form p {
   margin: 10px 0px;
@@ -221,11 +201,11 @@ html main #go-up:hover, body main #go-up:hover {
 .contact fieldset form p input,
 .contact fieldset form p textarea {
   border-radius: 8px;
-  background-color: #ebebeb;
-  border: 1px solid #79cab6;
+  background-color: #f0f0f0;
+  border: 1px solid #a76beb;
   outline: none;
   padding: 10px;
-  color: #381460;
+  color: #884fc9;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 1.1em;
   margin-top: 5px;
@@ -235,26 +215,30 @@ html main #go-up:hover, body main #go-up:hover {
 }
 .contact fieldset form p input:focus,
 .contact fieldset form p textarea:focus {
-  border: 1px solid #4a9280;
+  border: 1px solid #884fc9;
 }
 .contact fieldset form p input::-moz-placeholder, .contact fieldset form p textarea::-moz-placeholder {
-  color: #79cab6;
+  color: #ffffff;
 }
 .contact fieldset form p input::placeholder,
 .contact fieldset form p textarea::placeholder {
-  color: #79cab6;
+  color: #ffffff;
 }
 .contact fieldset form p .button {
-  background-color: #ebebeb;
-  color: #79cab6;
-  width: 100%;
+  background-color: #a76beb;
+  color: #f0f0f0;
+  width: 98%;
+  margin: auto;
   align-items: center;
   cursor: pointer;
   transition: all 0.2s;
 }
 .contact fieldset form p .button:hover {
-  background-color: #79cab6;
-  color: #ebebeb;
+  background-color: #884fc9;
+}
+.contact fieldset form p .button:active {
+  background-color: #572d86;
+  border: 1px solid #572d86;
 }
 
 @font-face {
@@ -262,12 +246,12 @@ html main #go-up:hover, body main #go-up:hover {
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
 }
 footer {
-  background-color: #79cab6;
+  background-color: #a76beb;
   text-align: center;
   padding: 10px;
 }
 footer nav a {
-  color: #ebebeb;
+  color: #f0f0f0;
   text-decoration: none;
   font-size: 1.5em;
   margin: 5px;
@@ -277,7 +261,7 @@ footer nav a:hover {
   font-size: 1.3em;
 }
 footer p {
-  color: #ebebeb;
+  color: #f0f0f0;
   margin-top: 15px;
 }
 
@@ -292,7 +276,7 @@ footer p {
   margin: auto;
 }
 .home h1 {
-  color: #4a9280;
+  color: #884fc9;
   padding: 20px;
   font-size: 2.5em;
   max-width: 500px;
@@ -315,11 +299,6 @@ footer p {
   }
 }
 
-.line {
-  border-bottom: 1px solid #4a9280;
-  margin: 20px;
-}
-
 @font-face {
   font-family: "Semplicita";
   src: url("../fonts/semplicita/Semplicita/Semplicita Light.otf") format("opentype");
@@ -337,11 +316,11 @@ header .change-theme {
   outline: none;
   border: none;
   cursor: pointer;
-  color: #79cab6;
+  color: #a76beb;
   transition: all 0.2s;
 }
 header .change-theme:hover {
-  color: #4a9280;
+  color: #884fc9;
 }
 header .burguer_menu {
   display: flex;
@@ -351,12 +330,15 @@ header .burguer_menu {
 header .burguer_menu i {
   padding: 15px;
   font-size: 2em;
-  color: #79cab6;
+  color: #a76beb;
   cursor: pointer;
   transition: all 0.2s;
 }
 header .burguer_menu i:hover {
-  color: #4a9280;
+  color: #884fc9;
+}
+header .burguer_menu i:active {
+  color: #572d86;
 }
 header .burguer_menu .menu {
   text-align: right;
@@ -372,11 +354,14 @@ header .burguer_menu .menu li {
 }
 header .burguer_menu .menu li a {
   text-decoration: none;
-  color: #79cab6;
+  color: #a76beb;
   transition: all 0.2s;
 }
 header .burguer_menu .menu li a:hover {
-  color: #4a9280;
+  color: #884fc9;
+}
+header .burguer_menu .menu li a:active {
+  color: #572d86;
 }
 
 @media screen and (min-width: 768px) {
@@ -400,12 +385,18 @@ header .burguer_menu .menu li a:hover {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.projects .project img {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1215686275);
+  border-radius: 2px;
   width: 80%;
   max-width: 800px;
+  margin: 50px auto;
+  padding-top: 50px;
+}
+.projects .project img {
+  width: 90%;
+  max-width: 800px;
   margin: auto;
-  border-radius: 5px;
+  border-radius: 2px;
 }
 .projects .project .project-container {
   margin: 30px;
@@ -415,7 +406,7 @@ header .burguer_menu .menu li a:hover {
 }
 .projects .project .project-container h4 {
   font-size: 1.5em;
-  color: #4a9280;
+  color: #a76beb;
   margin: 0px;
 }
 .projects .project .project-container p {
@@ -426,16 +417,19 @@ header .burguer_menu .menu li a:hover {
 }
 .projects .project .project-container a {
   align-self: center;
-  background-color: #79cab6;
+  background-color: #a76beb;
   border-radius: 30px;
   text-align: center;
   width: 50%;
   max-width: 400px;
   text-decoration: none;
-  color: #ebebeb;
+  color: #f0f0f0;
   padding: 5px;
   transition: all 0.2s;
 }
 .projects .project .project-container a:hover {
-  background-color: #4a9280;
+  background-color: #884fc9;
+}
+.projects .project .project-container a:active {
+  background-color: #572d86;
 }/*# sourceMappingURL=style.css.map */

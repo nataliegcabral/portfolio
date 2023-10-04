@@ -13,7 +13,7 @@ header {
         outline: none;
         border: none;
         cursor: pointer;
-        color: $color4;
+        color: $color2;
         @include transition;
 
         &:hover {
@@ -29,12 +29,16 @@ header {
     i {
         padding: 15px;
         font-size: 2em;
-        color: $color4;
+        color: $color2;
         cursor: pointer;
         @include transition;
 
         &:hover {
             color: $color3;
+        }
+
+        &:active {
+            color: $color1;
         }
     }
 
@@ -53,11 +57,15 @@ header {
 
             a {
                 text-decoration: none;
-                color: $color4;
+                color: $color2;
                 @include transition;
 
                 &:hover {
                     color: $color3;
+                }
+
+                &:active {
+                    color: $color1;
                 }
             }
         }

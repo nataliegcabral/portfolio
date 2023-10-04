@@ -14,39 +14,16 @@ $display-font: 'Oswald', sans-serif;
 //COLORS
 
 $color0: #0b0b0e;
-$color1: #381460;
-$color2: #6c32af;
-$color3: #4a9280;
-$color4: #79cab6;
-$color5: #ebebeb;
-$color6: #151520;
+$color1: #572d86;
+$color2: #a76beb;
+$color3: #884fc9;
+$color4: #212031;
+$color5: #f0f0f0;
+
 
 
 
 //FUNCTIONS
-
-@mixin gradient {
-  background-image: linear-gradient(to right, #A0EFFF, #CAA0E6, #FFA1AE);
-  background-clip: inherit;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-@mixin dark-mode {
-  color: $color2;
-
-  &:hover {
-    color: $color1;
-  }
-
-}
-
-@mixin line {
-  .line {
-    border-bottom: 1px solid $color3;
-    margin: 20px;
-  }
-}
 
 @mixin project($direction) {
     margin: 30px;

@@ -8,12 +8,18 @@
 
     .project {
         @include project(column);
+        box-shadow: 1px 1px 10px #0000001f;
+        border-radius: 2px;
+        width: 80%;
+        max-width: 800px;
+        margin: 50px auto;
+        padding-top: 50px;
 
         img {
-            width: 80%;
+            width: 90%;
             max-width: 800px;
             margin: auto;
-            border-radius: 5px;
+            border-radius: 2px;
         }
 
         .project-container {
@@ -22,7 +28,7 @@
 
             h4 {
                 font-size: 1.5em;
-                color: $color3;
+                color: $color2;
                 margin: 0px;
             }
 
@@ -35,7 +41,7 @@
 
             a {
                 align-self: center;
-                background-color: $color4;
+                background-color: $color2;
                 border-radius: 30px;
                 text-align: center;
                 width: 50%;
@@ -47,6 +53,10 @@
 
                 &:hover {
                     background-color: $color3;
+                }
+
+                &:active {
+                    background-color: $color1;
                 }
             }
         }

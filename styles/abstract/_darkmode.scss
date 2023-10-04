@@ -1,16 +1,21 @@
 @import './variables';
 
+//amanhã ajeitar as cores dos botões e hover/active deles no darkmode 
+
 .dark-mode {
-    background-color: $color6;
+    background-color: $color4;
     color: $color5;
 
-    section {
-        h1,
-        h3 {
+
+
+    section {    
+
+        h1 {
             color: $color2;
         }
 
         .project {
+            box-shadow: 1px 1px 10px #0000007c;
             .project-container {
                 h4 {
                     color: $color2;
@@ -20,6 +25,10 @@
                     background-color: $color2;
 
                     &:hover {
+                        background-color: $color3;
+                    }
+
+                    &:active {
                         background-color: $color1;
                     }
                 }
@@ -27,32 +36,20 @@
         }
 
         .skills {
+            background-color: $color4;
+            box-shadow: 1px 1px 10px #0000007c;
+            
             .developer {
+                h3, li {
+                    color: $color5;
+                }
+
                 h4 {
-                    color: $color1;
+                    color: $color2;
                 }
             }
         }
 
-
-    }
-
-    .change-theme {
-        @include dark-mode;
-    }
-
-    .burguer_menu {
-        i {
-            @include dark-mode;
-        }
-
-        .menu {
-            li {
-                a {
-                    @include dark-mode;
-                }
-            }
-        }
     }
 
     .about {
@@ -61,29 +58,16 @@
         }
     }
 
-    .skills {
-        background-color: $color2;
-
-        .developer {
-            color: $color1;
-
-            h4 {
-                color: $color2;
-            }
-        }
-
-    }
-
     .contact {
         fieldset {
-            background-color: $color6;
-            border: 1px solid $color2;
+            background-color: $color4;
+            box-shadow: 1px 1px 10px #0000007c;
             color: $color5;
 
             input,
             textarea {
                 border: 1px solid $color1;
-                background-color: $color6;
+                background-color: $color4;
                 color: $color5;
 
                 &:focus {
@@ -92,15 +76,6 @@
 
                 &::placeholder {
                     color: #ffffff8e;
-                }
-            }
-
-            .button {
-                background-color: $color6;
-                color: $color2;
-
-                &:hover {
-                    background-color: $color2;
                 }
             }
 

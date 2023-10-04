@@ -1,17 +1,18 @@
 @import '../abstract/variables';
 
 footer {
-    background-color: $color4;
+    background-color: $color2;
     text-align: center;
     padding: 10px;
 
     nav {
-
+        
         a {
             color: $color5;
             text-decoration: none;
             font-size: 1.5em;
             margin: 5px;
+            
 
             @include transition;
 

@@ -1,7 +1,7 @@
 @import '../abstract/variables';
 
 .contact {
-    color: $color3;
+    color: $color2;
     display: flex;
     flex-direction: column;
     margin: 0px auto;
@@ -13,13 +13,14 @@
 
 
     fieldset {
-        border-radius: 5px;
+        border-radius: 2px;
         margin: 20px;
         background-color: $color5;
-        border: 1px solid $color4;
+        border: none;
+        box-shadow: 1px 1px 10px #0000001f;
 
         form {
-            margin: 12px;
+            margin: 12px auto;
 
             p {
                 margin: 10px 0px;
@@ -34,10 +35,10 @@
                 textarea {
                     border-radius: 8px;
                     background-color: $color5;
-                    border: 1px solid $color4;
+                    border: 1px solid $color2;
                     outline: none;
                     padding: 10px;
-                    color: $color1;
+                    color: $color3;
                     font-family: Arial, Helvetica, sans-serif;
                     font-size: 1.1em;
                     margin-top: 5px;
@@ -50,22 +51,26 @@
                     }
 
                     &::placeholder {
-                        color: $color4;
+                        color: #ffffff;
                     }
                 }
 
                 .button {
-                    background-color: $color5;
-                    color: $color4;
-                    width: 100%;
+                    background-color: $color2;
+                    color: $color5;
+                    width: 98%;
+                    margin: auto;
                     align-items: center;
                     cursor: pointer;
                     @include transition;
 
                     &:hover {
-                        background-color: $color4;
-                        color: $color5;
-                        
+                        background-color: $color3;
+                    }
+
+                    &:active {
+                        background-color: $color1;
+                        border: 1px solid $color1;
                     }
                 }
             }
